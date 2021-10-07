@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        use browser DEV tool to observe the box model
+        line-hight: for those text, define the line-hight of text
+     -->
+    <style>
+        button{
+            background:#333;
+            color:white;
+            border:10px solid yellow;
+            border-radius: 0.5rem;
+            
+            font-size: 1rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            line-height: 5rem;
+            
+        }
+        div{
+            background:yellow;
+            color:blue;
+            font-size: 2rem;
+            padding: 2rem;
+            border:2rem solid yellow;
+            margin-top: 2rem;
+            line-height: 1rem;
+        }
+        div.a{
+            background:yellow;
+            color:blue;
+            font-size: 2rem;
+            padding: 2rem;
+            border:2rem solid yellow;
+            margin-top: 2rem;
+            line-height: 120%;
+
+        }
+        div.b{
+            background:yellow;
+            color:blue;
+            font-size: 2rem;
+            padding: 2rem;
+            border:2rem solid yellow;
+            margin-top: 2rem;
+            line-height: 200%;
+        }
+        div.c{
+            background:yellow;
+            color:blue;
+            font-size: 2rem;
+            padding: 2rem;
+            border:2rem solid yellow;
+            margin-top: 2rem;
+            line-height: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <button>Mike Tang</button>
+    <button>Yanli LI</button>
+    <h1>CSS TESTING</h1>
+    <div> this is normal font size</div>
+
+
+
+    <h2>line-height: normal (default):</h2>
+<div class="a">This is a paragraph with a standard line-height.<br>
+The standard line height in most browsers is about 110% to 120%.</div>
+
+<h2>line-height: 1.6 (recommended):</h2>
+<div class="b">This is a paragraph with the recommended line-height.<br>
+The line height is here set to 1.6. This is a unitless value;<br>
+meaning that the line height will be relative to the font size.</div>
+
+<h2>line-height: 80%:</h2>
+<div class="c">This is a paragraph with a smaller line-height.<br>
+The line height is here set to 80%.</div>
+
+<h2>line-height: 200%:</h2>
+<div class="d">This is a paragraph with a bigger line-height.<br>
+The line height is here set to 200%.</div>
+</body>
+</html>
